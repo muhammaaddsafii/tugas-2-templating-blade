@@ -178,7 +178,7 @@ DataTable.ext.renderer.pageButton.bootstrap = function ( settings, host, idx, bu
 		$(host).find( '[data-dt-idx='+activeEl+']' ).focus();
 	}
 };
-
+	
 
 return DataTable;
 }));

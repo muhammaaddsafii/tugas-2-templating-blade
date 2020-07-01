@@ -14815,7 +14815,6 @@
 		);
 	}
 	
-	
 	// Default sort methods
 	$.extend( _ext.type.order, {
 		// Dates
