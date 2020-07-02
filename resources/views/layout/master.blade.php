@@ -43,6 +43,12 @@
       <li class="nav-item d-none d-sm-inline-block">
         <a href="{{url('/data-table')}}" class="nav-link">Data-Table</a>
       </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="{{url('/pertanyaan')}}" class="nav-link">Pertanyaan</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="{{url('/jawaban')}}" class="nav-link">Jawaban</a>
+      </li>
     </ul>
 
     <!-- SEARCH FORM -->
