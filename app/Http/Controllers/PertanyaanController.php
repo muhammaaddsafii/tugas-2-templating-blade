@@ -23,8 +23,8 @@ class PertanyaanController extends Controller
         $question = new Question;
         $question->judul = $request->judul;
         $question->isi = $request->judul;
-        $question->tanggal_dibuat = $request->tanggal_dibuat;
-        $question->tanggal_diperbaharui = $request->tanggal_diperbaharui;
+        $question->created_at= $request->created_at;
+        $question->updated_at = $request->updated_at;
 
         $question->save();
 
