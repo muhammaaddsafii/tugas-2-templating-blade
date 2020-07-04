@@ -15,6 +15,7 @@
                 <th scope="col">Isi</th>
                 <th scope="col">Tanggal Dibuat</th>
                 <th scope="col">Tanggal Diperbaharui</th>
+                <th scope="col">Action</th>
               </tr>
             </thead>
             <tbody>
@@ -25,6 +26,7 @@
                     <td>{{$question->isi}}</td>
                     <td>{{$question->created_at}}</td>
                     <td>{{$question->updated_at}}</td>
+                    <td><a class="btn btn-primary" href="{{url('/jawaban/{id_pertanyaan}')}}" role="button">Jawaban</a></td>
                   </tr>
                 @endforeach
             </tbody>

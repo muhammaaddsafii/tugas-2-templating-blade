@@ -22,7 +22,7 @@ class PertanyaanController extends Controller
     public function store(Request $request){
         $question = new Question;
         $question->judul = $request->judul;
-        $question->isi = $request->judul;
+        $question->isi = $request->isi;
         $question->created_at= $request->created_at;
         $question->updated_at = $request->updated_at;
 

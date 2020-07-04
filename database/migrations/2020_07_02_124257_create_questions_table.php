@@ -14,11 +14,14 @@ class CreateQuestionsTable extends Migration
     public function up()
     {
         Schema::create('questions', function (Blueprint $table) {
-            $table->bigIncrements('id_pertanyaan');
+            $table->bigIncrements('id_pertanyaan')->unsigned(0);
             $table->string('judul', 255);
             $table->string('isi', 255);
             $table->timestamps(0);
         });
+
+        $statement = "ALTER TABLE questions AUTO_INCREMENT = 0;";
+        DB::unprepared($statement);
     }
 
     /**
